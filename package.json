@@ -41,7 +41,7 @@
     "validate:registries": "pnpm --filter=v4 validate:registries",
     "test:apps": "pnpm --filter=v4 test:apps"
   },
-  "packageManager": "pnpm@9.0.6",
+  "packageManager": "pnpm@10.28.2",
   "dependencies": {
     "@babel/core": "^7.22.1",
     "@changesets/changelog-github": "^0.4.8",
@@ -85,6 +85,13 @@
     "overrides": {
       "@types/react": "19.2.2",
       "@types/react-dom": "19.2.2"
-    }
+    },
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "msw",
+      "puppeteer",
+      "sharp",
+      "unrs-resolver"
+    ]
   }
 }
